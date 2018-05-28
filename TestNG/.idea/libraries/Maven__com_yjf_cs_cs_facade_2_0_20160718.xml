@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.cs:cs-facade:2.0.20160718">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/cs/cs-facade/2.0.20160718/cs-facade-2.0.20160718.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/cs/cs-facade/2.0.20160718/cs-facade-2.0.20160718-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/cs/cs-facade/2.0.20160718/cs-facade-2.0.20160718-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

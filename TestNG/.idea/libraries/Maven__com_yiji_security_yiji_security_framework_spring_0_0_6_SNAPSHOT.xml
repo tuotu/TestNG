@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.security:yiji-security-framework-spring:0.0.6-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/security/yiji-security-framework-spring/0.0.6-SNAPSHOT/yiji-security-framework-spring-0.0.6-20180111.095801-22.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/security/yiji-security-framework-spring/0.0.6-SNAPSHOT/yiji-security-framework-spring-0.0.6-20180111.095801-22-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/security/yiji-security-framework-spring/0.0.6-SNAPSHOT/yiji-security-framework-spring-0.0.6-20180111.095801-22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

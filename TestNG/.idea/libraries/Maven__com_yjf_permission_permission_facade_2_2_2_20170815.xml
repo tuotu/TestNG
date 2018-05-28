@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.permission:permission-facade:2.2.2.20170815">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/permission/permission-facade/2.2.2.20170815/permission-facade-2.2.2.20170815.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/permission/permission-facade/2.2.2.20170815/permission-facade-2.2.2.20170815-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/permission/permission-facade/2.2.2.20170815/permission-facade-2.2.2.20170815-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

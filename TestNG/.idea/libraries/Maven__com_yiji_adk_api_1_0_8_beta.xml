@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.adk:api:1.0.8-beta">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/adk/api/1.0.8-beta/api-1.0.8-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/adk/api/1.0.8-beta/api-1.0.8-beta-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/adk/api/1.0.8-beta/api-1.0.8-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

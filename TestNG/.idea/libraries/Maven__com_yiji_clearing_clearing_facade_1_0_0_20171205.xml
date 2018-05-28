@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.clearing:clearing-facade:1.0.0.20171205">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/clearing/clearing-facade/1.0.0.20171205/clearing-facade-1.0.0.20171205.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/clearing/clearing-facade/1.0.0.20171205/clearing-facade-1.0.0.20171205-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/clearing/clearing-facade/1.0.0.20171205/clearing-facade-1.0.0.20171205-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

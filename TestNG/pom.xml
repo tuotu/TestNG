@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>TestNG</groupId>
+    <artifactId>TestNG</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <testng.version>6.9.4</testng.version>
+        <javassist.version>3.18.2-GA</javassist.version>
+        <logback.version>1.2.3</logback.version>
+        <mysql.connect.version>5.1.30</mysql.connect.version>
+        <mybatis.generator.core>1.3.2</mybatis.generator.core>
+        <mybatis.spring>1.2.0</mybatis.spring>
+        <spring.version>4.2.5.RELEASE</spring.version>
+        <druid.version>0.2.9</druid.version>
+        <mybatis.version>3.2.1</mybatis.version>
+        <yjf.common.version>2.2.20170816-1</yjf.common.version>
+
+        <ccp.facade.version>1.0.20.20160721</ccp.facade.version>
+        <estate.facade.version>1.0.0.20130204</estate.facade.version>
+        <reconcenter.facade.version>3.8.0-20170908</reconcenter.facade.version>
+        <account.version>2.0.1-20171225</account.version>
+    </properties>
+
+
+    <!-- 指定testng的库 -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>bintray</name>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <!-- 必须要的sql连接jar包 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connect.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>${mybatis.generator.core}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.yjf.common</groupId>
+            <artifactId>yjf-common-util</artifactId>
+            <version>${yjf.common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>yiji-2.5.19</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.zookeeper</groupId>
+                    <artifactId>zookeeper</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.5</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 系统版本 -->
+        <dependency>
+            <groupId>com.yjf.core.accountant</groupId>
+            <artifactId>accountant-facade</artifactId>
+            <version>4.0.0.5-20171121</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yjf.core.payengine</groupId>
+            <artifactId>payengine-facade</artifactId>
+            <version>2.0.1.20180118</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yiji.core.customer</groupId>
+            <artifactId>customer-facade</artifactId>
+            <version>3.6.0.20170921</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.core.merchant</groupId>
+            <artifactId>merchantcore-facade</artifactId>
+            <version>2.3.1.20171221</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yjf.core.merchant</groupId>
+            <artifactId>merchantcore-facade-switch</artifactId>
+            <version>2.3.1.20161228</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yjf.core.merchant</groupId>
+            <artifactId>merchantcore-facade-product</artifactId>
+            <version>2.3.1.20170110</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yjf.core.merchant</groupId>
+            <artifactId>merchantcore-facade-bus</artifactId>
+            <version>2.3.1.20170412</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.core.trade</groupId>
+            <artifactId>trade-facade</artifactId>
+            <version>2.6.7.20180110</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.core.charge</groupId>
+            <artifactId>charge-facade</artifactId>
+            <version>4.0.0-20171225</version>
+        </dependency>
+
+        <!-- fox -->
+        <dependency>
+            <groupId>com.yiji.boss</groupId>
+            <artifactId>fox-facade</artifactId>
+            <version>2.1.0.20161018</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dtrace-core</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dtrace-dubbo</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dtrace-api</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- bizgw -->
+        <dependency>
+            <groupId>com.yjf.bizgw</groupId>
+            <artifactId>bizgw-facade</artifactId>
+            <version>1.0.20161026</version>
+        </dependency>
+
+        <!-- cms -->
+        <dependency>
+            <groupId>com.yiji.cms</groupId>
+            <artifactId>cms-facade</artifactId>
+            <version>2.0.0.20170223</version>
+        </dependency>
+
+        <!-- scheduler -->
+        <dependency>
+            <groupId>com.yjf.scheduler</groupId>
+            <artifactId>scheduler-facade</artifactId>
+            <version>2.0.20150225</version>
+        </dependency>
+
+        <!-- here -->
+        <dependency>
+            <groupId>com.yiji.framework</groupId>
+            <artifactId>hera-client</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!-- yedis -->
+        <dependency>
+            <groupId>com.yiji.framework</groupId>
+            <artifactId>yiji-yedis</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+
+        <!-- cs -->
+        <dependency>
+            <groupId>com.yjf.cs</groupId>
+            <artifactId>cs-facade</artifactId>
+            <version>2.0.20160718</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.common</groupId>
+            <artifactId>yjf-common-iputil</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- minos -->
+        <dependency>
+            <groupId>com.yiji</groupId>
+            <artifactId>minos-client</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- flowplayer -->
+        <dependency>
+            <groupId>com.yiji.flowplayer</groupId>
+            <artifactId>flowplayercoop-facade</artifactId>
+            <version>2.3.1123</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dtrace-core</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dtrace-dubbo</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dtrace-api</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- interpretation 重构后的client测试接口 -->
+        <dependency>
+            <groupId>com.yiji.jointestmock</groupId>
+            <artifactId>jointestmock-facade</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!-- interpretation -->
+        <dependency>
+            <groupId>com.yiji</groupId>
+            <artifactId>interpretation-facade</artifactId>
+            <version>1.0.2-20160615</version>
+        </dependency>
+        <!-- xdata -->
+        <dependency>
+            <groupId>com.yjf.xdata</groupId>
+            <artifactId>xdata-facade</artifactId>
+            <version>1.0.20160830</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yjf.xdata</groupId>
+            <artifactId>xdata-rowkey</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>1.1.1.2.3.0.0-2557</version>
+            <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.mortbay.jetty</groupId>
+                    <artifactId>jetty-util</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.yiji.framework</groupId>
+            <artifactId>fastdfs-client</artifactId>
+            <version>1.1.5</version>
+        </dependency>
+
+        <!-- xdata-gateway -->
+        <dependency>
+            <groupId>com.yjf.xdata.gateway</groupId>
+            <artifactId>xdata-gateway-facade</artifactId>
+            <version>1.0.20170122</version>
+        </dependency>
+
+
+        <!-- mongo -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.13.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>1.8.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>1.11.4.RELEASE</version>
+        </dependency>
+
+        <!-- securitycore -->
+        <dependency>
+            <groupId>com.yjf.securitycore</groupId>
+            <artifactId>securitycore-facade</artifactId>
+            <version>2.0.2.20171206</version>
+        </dependency>
+
+        <!-- securitygw -->
+        <dependency>
+            <groupId>com.yjf.securitygw</groupId>
+            <artifactId>securitygw-facade</artifactId>
+            <version>2.0.0.20150311</version>
+        </dependency>
+
+        <!-- silverbolt -->
+        <dependency>
+            <groupId>com.yjf.core.silverbolt</groupId>
+            <artifactId>silverbolt-facade</artifactId>
+            <version>1.1.6-20180122</version>
+        </dependency>
+
+        <!-- sdds -->
+        <dependency>
+            <groupId>com.yjf.sdds</groupId>
+            <artifactId>sdds-facade</artifactId>
+            <version>2.0.0.20160205</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dtrace-core</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- caprod -->
+        <dependency>
+            <groupId>com.yjf.caprod</groupId>
+            <artifactId>caprod-facade</artifactId>
+            <version>2.1.0.20171128</version>
+        </dependency>
+
+        <!-- cfca -->
+        <dependency>
+            <groupId>com.yjf.caprodcfca</groupId>
+            <artifactId>caprodcfca-facade</artifactId>
+            <version>2.0.0.20160205</version>
+        </dependency>
+
+        <!-- securitydata -->
+        <dependency>
+            <groupId>com.yjf.securitydata</groupId>
+            <artifactId>securitydata-client</artifactId>
+            <version>1.0.0.20171127</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yjf.securitydata</groupId>
+            <artifactId>securitydata-facade</artifactId>
+            <version>1.0.0.20171127</version>
+        </dependency>
+
+        <!-- 风险共享平台 -->
+        <dependency>
+            <groupId>com.yiji.security.ries</groupId>
+            <artifactId>ries-facade</artifactId>
+            <version>2.0.20171019</version>
+        </dependency>
+
+        <!-- 反欺诈系统 -->
+        <dependency>
+            <groupId>com.yiji.antifraud</groupId>
+            <artifactId>antifraud-facade</artifactId>
+            <version>1.0.0.20170314</version>
+        </dependency>
+
+        <!--app-kit-api -->
+        <dependency>
+            <groupId>com.yiji.core.app.kit</groupId>
+            <artifactId>app_kit_api</artifactId>
+            <version>1.0.10alpha</version>
+        </dependency>
+
+        <!-- adk api -->
+        <dependency>
+            <groupId>com.yiji.adk</groupId>
+            <artifactId>api</artifactId>
+            <version>1.0.8-beta</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dtrace-core</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dtrace-dubbo</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dtrace-api</artifactId>
+                    <groupId>com.yiji</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- finance.interchange -->
+        <dependency>
+            <groupId>com.yjf.interchange</groupId>
+            <artifactId>interchange-facade</artifactId>
+            <version>2.1.0.20171114</version>
+        </dependency>
+        <!--interchange 模拟发送 MQ消息使用 -->
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <!--interchange 模拟发送 MQ消息使用 -->
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>1.5.6.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jackson-databind</artifactId>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--interchange 模拟发送 MQ消息使用 -->
+        <dependency>
+            <groupId>com.yjf.cungw</groupId>
+            <artifactId>monitor-client</artifactId>
+            <version>2.1.20170208</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.pay.ebank.center</groupId>
+            <artifactId>center-facade</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- piggy -->
+        <dependency>
+            <groupId>com.yjf.piggy</groupId>
+            <artifactId>piggy-facade</artifactId>
+            <version>2.0.0.20170810</version>
+        </dependency>
+
+        <!--trade-elemen 交易要素 -->
+        <dependency>
+            <groupId>com.yjf.gw.domain</groupId>
+            <artifactId>trade-element</artifactId>
+            <version>2.0.20171020</version>
+        </dependency>
+
+
+        <!-- fsp <dependency> <groupId>com.yjf.fsp</groupId> <artifactId>fsp-facade</artifactId>
+            <version>${fsp.facade.version}</version> </dependency> -->
+        <!-- libra -->
+        <dependency>
+            <groupId>com.yjf.libra</groupId>
+            <artifactId>libra-test</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- ccp -->
+        <dependency>
+            <groupId>com.yiji.ccp</groupId>
+            <artifactId>ccp-facade</artifactId>
+            <version>${ccp.facade.version}</version>
+        </dependency>
+
+        <!-- sdds -->
+        <!-- commonproducts -->
+        <dependency>
+            <groupId>com.yiji.commonproducts</groupId>
+            <artifactId>commonproducts-facade</artifactId>
+            <version>2.7.6.20180131</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>hibernate-validator</artifactId>
+                    <groupId>org.hibernate</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- withdraw -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.withdraw</groupId>
+            <artifactId>withdraw-facade</artifactId>
+            <version>1.0.0.20171013</version>
+        </dependency>
+        <!-- deduct -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.deduct</groupId>
+            <artifactId>deduct-facade</artifactId>
+            <version>1.0.1.20170210</version>
+        </dependency>
+        <!-- payment -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.payment</groupId>
+            <artifactId>payment-facade</artifactId>
+            <version>1.1.0.20180123</version>
+        </dependency>
+        <!-- batchbehalf -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.batchbehalf</groupId>
+            <artifactId>batchbehalf-facade</artifactId>
+            <version>1.2.1.20180222</version>
+        </dependency>
+        <!-- transfer -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.transfer</groupId>
+            <artifactId>transfer-facade</artifactId>
+            <version>1.0.5.20170731</version>
+        </dependency>
+        <!-- enchashment -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.enchashment</groupId>
+            <artifactId>enchashment-facade</artifactId>
+            <version>1.2.0.20171228</version>
+        </dependency>
+        <!-- abroadpay -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.abroadpay</groupId>
+            <artifactId>abroadpay-facade</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- clearing -->
+        <dependency>
+            <groupId>com.yiji.clearing</groupId>
+            <artifactId>clearing-facade</artifactId>
+            <version>1.0.0.20171205</version>
+        </dependency>
+        <!-- quickpay -->
+        <dependency>
+            <groupId>com.yiji.commonproducts.quickpay</groupId>
+            <artifactId>quickpay-facade</artifactId>
+            <version>gateway-SNAPSHOT</version>
+        </dependency>
+
+        <!-- ezmoney -->
+        <!--<dependency>
+            <groupId>com.yiji.ezmoney</groupId>
+            <artifactId>ezmoney-facade</artifactId>
+            <version>1.0.0.20140711</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.yjf.core.payengine</groupId>
+                    <artifactId>payengine-facade</artifactId>
+                </exclusion>
+                    <exclusion>
+                    <groupId>com.yif.core.customer</groupId>
+                    <artifactId>customer-facade</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.yjf.core</groupId>
+                    <artifactId>paycore-common</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>-->
+        <!-- ezmoney v2.0 -->
+        <dependency>
+            <groupId>com.yiji.ezinvest</groupId>
+            <artifactId>ezinvest-facade</artifactId>
+            <version>1.0.20150730</version>
+        </dependency>
+
+        <!-- estate -->
+        <dependency>
+            <groupId>com.yjf.estate</groupId>
+            <artifactId>estate-facade</artifactId>
+            <version>${estate.facade.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.core.reconcenter</groupId>
+            <artifactId>recon-facade</artifactId>
+            <version>${reconcenter.facade.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.fsp</groupId>
+            <artifactId>fsp-common-util</artifactId>
+            <version>1.0.0-final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>all</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.permission</groupId>
+            <artifactId>permission-facade</artifactId>
+            <version>2.2.2.20170815</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.yjf.common</groupId>
+                    <artifactId>yjf-common-util</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hibernate-validator</artifactId>
+                    <groupId>org.hibernate</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>com.yjf.core.account</groupId>
+            <artifactId>account-facade</artifactId>
+            <version>${account.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.yjf.core.payengine</groupId>
+                    <artifactId>payengine-facade</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- openapi -->
+        <dependency>
+            <groupId>com.yjf.openapi</groupId>
+            <artifactId>openapi-facade</artifactId>
+            <version>1.1.0_20160406</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.openapi</groupId>
+            <artifactId>openapi-arch-facade</artifactId>
+            <version>1.4.7.20170601</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.openapi</groupId>
+            <artifactId>openapi-arch-core</artifactId>
+            <version>1.4.7.20170601</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>com.yiji.postman</groupId>
+            <artifactId>postman-api-sdk</artifactId>
+            <version>1.2.6</version>
+        </dependency>
+
+        <!-- commonservices -->
+        <dependency>
+            <groupId>com.yiji.commonservices</groupId>
+            <artifactId>commonservices-facade</artifactId>
+            <version>3.7.0.20180131</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.fundsctl</groupId>
+            <artifactId>fundsctl-facade</artifactId>
+            <version>3.7.0.20180131</version>
+        </dependency>
+
+        <!-- opnapi_sdk -->
+        <dependency>
+            <groupId>com.yiji.openapi</groupId>
+            <artifactId>openapi-sdk</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-beans</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>spring-context</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>hibernate-validator</artifactId>
+                    <groupId>org.hibernate</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- itrus -->
+        <dependency>
+            <groupId>itrus</groupId>
+            <artifactId>itrusyjf</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>itrus</groupId>
+            <artifactId>itrustoyjf</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>itrus</groupId>
+            <artifactId>bcmail-jdk15</artifactId>
+            <version>145</version>
+        </dependency>
+        <dependency>
+            <groupId>itrus</groupId>
+            <artifactId>bcprov-jdk15</artifactId>
+            <version>145</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                    <version>3.3</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.mybatis.generator</groupId>
+                    <artifactId>mybatis-generator-maven-plugin</artifactId>
+                    <version>1.3.2</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                            <version>5.1.35</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <!--配置文件的路径-->
+                        <configurationFile>dalgen/generatorConfig.xml</configurationFile>
+                        <overwrite>true</overwrite>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <!-- 此配置不可缺，否则mybatis的Mapper.xml将会丢失 -->
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <!--指定资源的位置-->
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
+</project>

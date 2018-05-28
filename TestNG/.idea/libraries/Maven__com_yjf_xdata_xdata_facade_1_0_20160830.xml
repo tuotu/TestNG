@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.xdata:xdata-facade:1.0.20160830">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/xdata/xdata-facade/1.0.20160830/xdata-facade-1.0.20160830.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/xdata/xdata-facade/1.0.20160830/xdata-facade-1.0.20160830-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/xdata/xdata-facade/1.0.20160830/xdata-facade-1.0.20160830-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:reference id="securityDataClient"
+                     interface="com.yjf.securitydata.client.SecurityDataClient"
+                     version="1.5" />
+    <dubbo:reference id="fastPayQueryService"
+                     interface="com.yiji.commonproducts.payment.fastpay.api.query.FastPayQueryService"
+                     version="1.5" />
+</beans>

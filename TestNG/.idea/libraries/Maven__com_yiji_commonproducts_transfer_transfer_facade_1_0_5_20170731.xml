@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.commonproducts.transfer:transfer-facade:1.0.5.20170731">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonproducts/transfer/transfer-facade/1.0.5.20170731/transfer-facade-1.0.5.20170731.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonproducts/transfer/transfer-facade/1.0.5.20170731/transfer-facade-1.0.5.20170731-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonproducts/transfer/transfer-facade/1.0.5.20170731/transfer-facade-1.0.5.20170731-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

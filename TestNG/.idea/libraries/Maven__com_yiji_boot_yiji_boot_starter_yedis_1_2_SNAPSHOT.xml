@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.boot:yiji-boot-starter-yedis:1.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boot/yiji-boot-starter-yedis/1.2-SNAPSHOT/yiji-boot-starter-yedis-1.2-20171127.061000-254.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boot/yiji-boot-starter-yedis/1.2-SNAPSHOT/yiji-boot-starter-yedis-1.2-20171127.061000-254-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boot/yiji-boot-starter-yedis/1.2-SNAPSHOT/yiji-boot-starter-yedis-1.2-20171127.061000-254-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

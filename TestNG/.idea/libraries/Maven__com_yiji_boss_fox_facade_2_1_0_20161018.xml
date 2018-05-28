@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.boss:fox-facade:2.1.0.20161018">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boss/fox-facade/2.1.0.20161018/fox-facade-2.1.0.20161018.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boss/fox-facade/2.1.0.20161018/fox-facade-2.1.0.20161018-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boss/fox-facade/2.1.0.20161018/fox-facade-2.1.0.20161018-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

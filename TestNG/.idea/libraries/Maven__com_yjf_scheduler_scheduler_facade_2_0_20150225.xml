@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.scheduler:scheduler-facade:2.0.20150225">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/scheduler/scheduler-facade/2.0.20150225/scheduler-facade-2.0.20150225.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/scheduler/scheduler-facade/2.0.20150225/scheduler-facade-2.0.20150225-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/scheduler/scheduler-facade/2.0.20150225/scheduler-facade-2.0.20150225-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

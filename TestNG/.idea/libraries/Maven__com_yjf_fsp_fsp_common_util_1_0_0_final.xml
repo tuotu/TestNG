@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.fsp:fsp-common-util:1.0.0-final">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/fsp/fsp-common-util/1.0.0-final/fsp-common-util-1.0.0-final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/fsp/fsp-common-util/1.0.0-final/fsp-common-util-1.0.0-final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/fsp/fsp-common-util/1.0.0-final/fsp-common-util-1.0.0-final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

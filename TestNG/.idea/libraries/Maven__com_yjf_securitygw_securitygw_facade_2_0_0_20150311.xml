@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.securitygw:securitygw-facade:2.0.0.20150311">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/securitygw/securitygw-facade/2.0.0.20150311/securitygw-facade-2.0.0.20150311.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/securitygw/securitygw-facade/2.0.0.20150311/securitygw-facade-2.0.0.20150311-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/securitygw/securitygw-facade/2.0.0.20150311/securitygw-facade-2.0.0.20150311-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

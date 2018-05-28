@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.pb:pb-common:ap-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/pb/pb-common/ap-SNAPSHOT/pb-common-ap-20170518.072345-7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/pb/pb-common/ap-SNAPSHOT/pb-common-ap-20170518.072345-7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/pb/pb-common/ap-SNAPSHOT/pb-common-ap-20170518.072345-7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.superroute:superroute-facade:1.5.1.20161206">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/superroute/superroute-facade/1.5.1.20161206/superroute-facade-1.5.1.20161206.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/superroute/superroute-facade/1.5.1.20161206/superroute-facade-1.5.1.20161206-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/superroute/superroute-facade/1.5.1.20161206/superroute-facade-1.5.1.20161206-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

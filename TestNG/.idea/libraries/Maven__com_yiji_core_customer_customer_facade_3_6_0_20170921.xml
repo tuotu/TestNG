@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.core.customer:customer-facade:3.6.0.20170921">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/core/customer/customer-facade/3.6.0.20170921/customer-facade-3.6.0.20170921.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/core/customer/customer-facade/3.6.0.20170921/customer-facade-3.6.0.20170921-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/core/customer/customer-facade/3.6.0.20170921/customer-facade-3.6.0.20170921-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

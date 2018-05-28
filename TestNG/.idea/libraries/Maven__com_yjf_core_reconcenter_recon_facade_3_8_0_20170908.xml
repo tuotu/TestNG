@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.core.reconcenter:recon-facade:3.8.0-20170908">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/reconcenter/recon-facade/3.8.0-20170908/recon-facade-3.8.0-20170908.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/reconcenter/recon-facade/3.8.0-20170908/recon-facade-3.8.0-20170908-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/reconcenter/recon-facade/3.8.0-20170908/recon-facade-3.8.0-20170908-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

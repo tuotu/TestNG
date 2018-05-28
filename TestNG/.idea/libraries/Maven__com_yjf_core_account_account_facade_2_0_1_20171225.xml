@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.core.account:account-facade:2.0.1-20171225">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/account/account-facade/2.0.1-20171225/account-facade-2.0.1-20171225.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/account/account-facade/2.0.1-20171225/account-facade-2.0.1-20171225-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/account/account-facade/2.0.1-20171225/account-facade-2.0.1-20171225-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

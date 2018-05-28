@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.dtrace:dtrace-core:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/dtrace/dtrace-core/1.0.0-SNAPSHOT/dtrace-core-1.0.0-20170414.034816-21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/dtrace/dtrace-core/1.0.0-SNAPSHOT/dtrace-core-1.0.0-20170414.034816-21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/dtrace/dtrace-core/1.0.0-SNAPSHOT/dtrace-core-1.0.0-20170414.034816-21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.authenticate:authenticate-facade:1.4.1.20170105">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/authenticate/authenticate-facade/1.4.1.20170105/authenticate-facade-1.4.1.20170105.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/authenticate/authenticate-facade/1.4.1.20170105/authenticate-facade-1.4.1.20170105-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/authenticate/authenticate-facade/1.4.1.20170105/authenticate-facade-1.4.1.20170105-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

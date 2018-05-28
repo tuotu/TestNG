@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.security.ries:ries-facade:2.0.20171019">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/security/ries/ries-facade/2.0.20171019/ries-facade-2.0.20171019.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/security/ries/ries-facade/2.0.20171019/ries-facade-2.0.20171019-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/security/ries/ries-facade/2.0.20171019/ries-facade-2.0.20171019-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

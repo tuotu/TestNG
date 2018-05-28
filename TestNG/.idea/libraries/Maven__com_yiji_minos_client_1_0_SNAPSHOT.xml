@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji:minos-client:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/minos-client/1.0-SNAPSHOT/minos-client-1.0-20150604.030526-10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/minos-client/1.0-SNAPSHOT/minos-client-1.0-20150604.030526-10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/minos-client/1.0-SNAPSHOT/minos-client-1.0-20150604.030526-10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

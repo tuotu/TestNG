@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.cms:cms-facade:2.0.0.20170223">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/cms/cms-facade/2.0.0.20170223/cms-facade-2.0.0.20170223.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/cms/cms-facade/2.0.0.20170223/cms-facade-2.0.0.20170223-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/cms/cms-facade/2.0.0.20170223/cms-facade-2.0.0.20170223-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

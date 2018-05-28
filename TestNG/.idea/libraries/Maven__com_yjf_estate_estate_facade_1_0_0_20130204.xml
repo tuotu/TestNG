@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.estate:estate-facade:1.0.0.20130204">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/estate/estate-facade/1.0.0.20130204/estate-facade-1.0.0.20130204.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/estate/estate-facade/1.0.0.20130204/estate-facade-1.0.0.20130204-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/estate/estate-facade/1.0.0.20130204/estate-facade-1.0.0.20130204-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

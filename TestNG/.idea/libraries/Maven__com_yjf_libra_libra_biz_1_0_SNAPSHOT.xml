@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.libra:libra-biz:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/libra/libra-biz/1.0-SNAPSHOT/libra-biz-1.0-20150721.021656-18.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/libra/libra-biz/1.0-SNAPSHOT/libra-biz-1.0-20150721.021656-18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/libra/libra-biz/1.0-SNAPSHOT/libra-biz-1.0-20150721.021656-18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

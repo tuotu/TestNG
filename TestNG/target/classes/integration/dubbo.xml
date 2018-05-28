@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- consumer application name -->
+    
+    <dubbo:application name="TestNG"/>
+
+    <!-- registry address, used for service to register itself 初始化RegistryConfig -->
+    <dubbo:registry protocol="zookeeper" address="${dubbo.registry.zookeeper}"/>
+
+	<dubbo:consumer check="false" timeout="180000"/>
+	<dubbo:provider timeout="180000" />
+    <dubbo:monitor protocol="registry" />
+    
+   <bean id="dubboRemoteProxyFacotry" class="com.yjf.common.dubbo.DubboRemoteProxyFacotry" />
+
+    <bean id="propertyConfigurerForIntegeration"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="order" value="1" />
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="location" value="classpath:integration/integration.properties" />
+    </bean>
+</beans>

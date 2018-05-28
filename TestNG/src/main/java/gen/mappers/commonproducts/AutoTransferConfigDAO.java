@@ -1,0 +1,100 @@
+/**
+ *
+ * A dao interface provides methods to access database 
+ * Dont modify any generated method! 
+ * If you want to add a new method , plesae dont add  mbggenerated annotation marked comment.
+ *
+ * @Filename AutoTransferConfigDAO.java
+ *
+ * @Description
+ *
+ * @Author bohr.qiu
+ *
+ * @Email qzhanbo@yiji.com
+ *
+ */
+package gen.mappers.commonproducts;
+
+import gen.doproject.commonproducts.AutoTransferConfigDO;
+import gen.doproject.commonproducts.AutoTransferConfigDOExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface AutoTransferConfigDAO {
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int countByExample(AutoTransferConfigDOExample example);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int deleteByExample(AutoTransferConfigDOExample example);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int deleteByPrimaryKey(Long id);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int insert(AutoTransferConfigDO record);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int insertSelective(AutoTransferConfigDO record);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    List<AutoTransferConfigDO> selectByExample(AutoTransferConfigDOExample example);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    AutoTransferConfigDO selectByPrimaryKey(Long id);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int updateByExampleSelective(@Param("record") AutoTransferConfigDO record, @Param("example") AutoTransferConfigDOExample example);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int updateByExample(@Param("record") AutoTransferConfigDO record, @Param("example") AutoTransferConfigDOExample example);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int updateByPrimaryKeySelective(AutoTransferConfigDO record);
+
+    /**
+     * corresponds to the database table auto_transfer_config
+     *
+     * @mbggenerated
+     */
+    int updateByPrimaryKey(AutoTransferConfigDO record);
+}

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.postman:postman-api-sdk:1.2.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/postman/postman-api-sdk/1.2.6/postman-api-sdk-1.2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/postman/postman-api-sdk/1.2.6/postman-api-sdk-1.2.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/postman/postman-api-sdk/1.2.6/postman-api-sdk-1.2.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

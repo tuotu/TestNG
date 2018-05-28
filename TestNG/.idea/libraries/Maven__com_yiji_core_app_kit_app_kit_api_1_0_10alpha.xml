@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.core.app.kit:app_kit_api:1.0.10alpha">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/core/app/kit/app_kit_api/1.0.10alpha/app_kit_api-1.0.10alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/core/app/kit/app_kit_api/1.0.10alpha/app_kit_api-1.0.10alpha-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/core/app/kit/app_kit_api/1.0.10alpha/app_kit_api-1.0.10alpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.gw.domain:trade-element:2.0.20171020">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/gw/domain/trade-element/2.0.20171020/trade-element-2.0.20171020.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/gw/domain/trade-element/2.0.20171020/trade-element-2.0.20171020-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/gw/domain/trade-element/2.0.20171020/trade-element-2.0.20171020-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

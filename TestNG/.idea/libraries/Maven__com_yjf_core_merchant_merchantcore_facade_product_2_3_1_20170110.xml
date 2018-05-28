@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.core.merchant:merchantcore-facade-product:2.3.1.20170110">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/merchant/merchantcore-facade-product/2.3.1.20170110/merchantcore-facade-product-2.3.1.20170110.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/merchant/merchantcore-facade-product/2.3.1.20170110/merchantcore-facade-product-2.3.1.20170110-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/merchant/merchantcore-facade-product/2.3.1.20170110/merchantcore-facade-product-2.3.1.20170110-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.commonproducts.deduct:deduct-facade:1.0.1.20170210">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonproducts/deduct/deduct-facade/1.0.1.20170210/deduct-facade-1.0.1.20170210.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonproducts/deduct/deduct-facade/1.0.1.20170210/deduct-facade-1.0.1.20170210-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonproducts/deduct/deduct-facade/1.0.1.20170210/deduct-facade-1.0.1.20170210-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

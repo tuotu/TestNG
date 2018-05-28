@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="jdbc/jdbc.properties" />
+
+    <context id="test" targetRuntime="MyBatis3">
+        <plugin type="core.plugins.ToStringPlugin" />
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <plugin type="core.plugins.RenameClassPlugin" />
+        <plugin
+                type="core.plugins.MapperConfigPlugin">
+            <property name="targetProject" value="src/main/java" />
+            <property name="targetPackage" value="gen.mappers" />
+            <property name="fileName" value="commonproducts.MapperConfig.xml" />
+        </plugin>
+        <commentGenerator
+                type="core.plugins.DefaultCommentGenerator" />
+        <!--数据库链接URL，用户名、密码 -->
+        <jdbcConnection driverClass="${ds.mysqlClassName}"
+                        connectionURL="${ds.payment.mysqlUrl}" userId="${ds.payment.username}" password="${ds.payment.password}">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <!-- This property is used to specify whether MyBatis Generator should
+                force the use of java.math.BigDecimal for DECIMAL and NUMERIC fields, -->
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置 -->
+        <javaModelGenerator targetPackage="gen.doproject.commonproducts"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- 生成映射文件的包名和位置 -->
+        <sqlMapGenerator targetPackage="gen.mappers.commonproducts"
+                         targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="gen.mappers.commonproducts"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 要生成哪些表 -->
+        <table tableName="ad_deduct_info">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="deduct_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="ad_deduct_user_info">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="ad_mechant_deduct_quotas">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+
+        <table tableName="batch_behalf_detail">
+            <columnOverride column="amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="counter_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+
+        <table tableName="dubbo_payment_result_notify_info">
+        </table>
+
+        <table tableName="payment_operate_record">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="payment_record">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="payment_result_notify_info">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="payment_result_notify_record">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="product_base">
+        </table>
+
+        <table tableName="product_biz_no_map">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="transfer_biz_no_map">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="deduct_biz_no_map">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="withdraw_biz_no_map">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="product_model">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="security_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="sys_resource">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="sd_notify_info">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="sd_single_deduct">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="deduct_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="transfer_configuration">
+            <generatedKey column="product_id" sqlStatement="MYSQL"
+                          identity="true" />
+        </table>
+
+        <table tableName="transfer_record">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="trade_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="transfer_product_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="transfer_limit_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="withdraw_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="withdraw_detail_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="withdraw_limit_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="joint_accounts">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="joint_accounts_apply_logs">
+        </table>
+
+        <table tableName="joint_account_funds_in">
+            <columnOverride column="amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="product_task">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="product_hold_task">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="product_task_info">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+
+        <table tableName="joint_stream_log">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="transfer_bank_info">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="transfer">
+        </table>
+
+        <table tableName="withdraw">
+        </table>
+        <table tableName="transfer_contacts">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="auto_withdraw_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="auto_config_trigger">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="auto_transfer_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="auto_transferbank_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="recon_file">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="recon_file_task">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="recon_user_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="deduct">
+            <columnOverride column="amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="charge_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="deduct_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="deduct_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="amount_limit"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="day_amount_limit"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="pen_amount_min_limit"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="fast_trade">
+        </table>
+
+        <table tableName="fast_trade_error_code">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_trade_merchant">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="recon_history_apply">
+        </table>
+
+        <!-- 即时到帐订单模块 -->
+        <table tableName="fast_pay">
+            <columnOverride column="trade_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="foreign_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="share_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="share_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="fast_pay_timeouts">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <!-- 即时到帐管理模块 -->
+        <table tableName="fast_pay_bank">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_pay_method">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_pay_source_method">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_pay_channel">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_pay_merchant">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="product_config_args">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <!-- 通用支付服务 -->
+        <table tableName="trade_pay_info">
+            <columnOverride column="deposit_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="bail_pay_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="pay_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="buyer_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="seller_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="partner_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="share_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="subsidy_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="trade_pay_model">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <!-- 通用退款服务 -->
+        <table tableName="trade_refund_info">
+            <columnOverride column="refund_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="trade_refund_model">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="identity_validate">
+        </table>
+
+        <table tableName="merge_pay">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="batch_behalf">
+            <columnOverride column="behalf_amt"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="counter_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="failure_amt"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="item_counter_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+
+            <columnOverride column="success_amt"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="item_counter_fee_public"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+
+        <table tableName="fast_pay_share_profit">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="share_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="refund_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+        <table tableName="command_pay_param">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_pay_share_profit">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="share_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="refund_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+        <table tableName="trade_refund_share_profit">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="share_refund_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="refund_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+        <table tableName="recon_order_file">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="recon_order_history_apply">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="foreign_pay">
+            <columnOverride column="trade_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="buyer_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="partner_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+        <table tableName="auto_deduct_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="auto_deduct_trigger">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="deduct_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="transfer_to_yjf_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <columnOverride column="attach_validate_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="fast_pay_auto_withdraw_config">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="trade_merge_pay">
+            <columnOverride column="deposit_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="product_model_withdraw">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="product_model_deduct">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="product_model_payment">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="transfer_model">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="fast_pay_habit">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="third_party_accounts">
+        </table>
+        <table tableName="third_party_accounts_config">
+        </table>
+        <table tableName="batch_idempotent">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+
+        <table tableName="amazon_trade">
+            <columnOverride column="amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="clearing_checking_info">
+            <columnOverride column="trade_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="partner_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="channel_fee"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="clearing_checking_sum">
+            <columnOverride column="union_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="yjf_clearing_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="ipaynow_clearing_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="yjf_get_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="ipaynow_get_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="tradeAmount_sum"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="channelFee_sum"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+            <columnOverride column="partnerAmount_sum"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+
+        <table tableName="clearing_partner">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+        </table>
+        <table tableName="clearing_partner_sum">
+            <columnOverride column="clearing_amount"
+                            typeHandler="core.generatorName.MoneyTypeHandler"
+                            javaType="com.yjf.common.lang.util.money.Money" />
+        </table>
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.common:yjf-common-util:2.2.20170816-1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/common/yjf-common-util/2.2.20170816-1/yjf-common-util-2.2.20170816-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/common/yjf-common-util/2.2.20170816-1/yjf-common-util-2.2.20170816-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/common/yjf-common-util/2.2.20170816-1/yjf-common-util-2.2.20170816-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: itrus:bcprov-jdk15:145">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/itrus/bcprov-jdk15/145/bcprov-jdk15-145.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/itrus/bcprov-jdk15/145/bcprov-jdk15-145-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/itrus/bcprov-jdk15/145/bcprov-jdk15-145-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

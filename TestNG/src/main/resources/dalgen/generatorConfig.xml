@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="jdbc/jdbc.properties" />
+
+    <context id="test" targetRuntime="MyBatis3">
+        <plugin type="core.plugins.ToStringPlugin" />
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <plugin type="core.plugins.RenameClassPlugin" />
+        <plugin
+                type="core.plugins.MapperConfigPlugin">
+            <property name="targetProject" value="src/main/java" />
+            <property name="targetPackage" value="gen.mappers" />
+            <property name="fileName" value="test.MapperConfig.xml" />
+        </plugin>
+        <commentGenerator
+                type="core.plugins.DefaultCommentGenerator" />
+        <!--数据库链接URL，用户名、密码 -->
+        <jdbcConnection driverClass="${ds.mysqlClassName}"
+                        connectionURL="${ds.system.mysqlUrl}" userId="${ds.system.username}" password="${ds.system.password}">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <!-- This property is used to specify whether MyBatis Generator should
+                force the use of java.math.BigDecimal for DECIMAL and NUMERIC fields, -->
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置 -->
+        <javaModelGenerator targetPackage="gen.doproject"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- 生成映射文件的包名和位置 -->
+        <sqlMapGenerator targetPackage="gen.mappers.mapper"
+                         targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="gen.mappers.mapper"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 要生成哪些表 -->
+        <table tableName="person"></table>
+    </context>
+</generatorConfiguration>

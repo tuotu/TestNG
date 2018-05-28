@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.cb.merchant:cbmerchant-facade:1.2.2.20170322-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cb/merchant/cbmerchant-facade/1.2.2.20170322-SNAPSHOT/cbmerchant-facade-1.2.2.20170322-20170609.025000-12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cb/merchant/cbmerchant-facade/1.2.2.20170322-SNAPSHOT/cbmerchant-facade-1.2.2.20170322-20170609.025000-12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cb/merchant/cbmerchant-facade/1.2.2.20170322-SNAPSHOT/cbmerchant-facade-1.2.2.20170322-20170609.025000-12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

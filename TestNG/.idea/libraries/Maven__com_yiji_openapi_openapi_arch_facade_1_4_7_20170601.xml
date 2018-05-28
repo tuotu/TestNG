@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.openapi:openapi-arch-facade:1.4.7.20170601">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/openapi/openapi-arch-facade/1.4.7.20170601/openapi-arch-facade-1.4.7.20170601.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/openapi/openapi-arch-facade/1.4.7.20170601/openapi-arch-facade-1.4.7.20170601-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/openapi/openapi-arch-facade/1.4.7.20170601/openapi-arch-facade-1.4.7.20170601-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

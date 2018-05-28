@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.adk:common:1.2.22-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/adk/common/1.2.22-SNAPSHOT/common-1.2.22-20170524.032721-27.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/adk/common/1.2.22-SNAPSHOT/common-1.2.22-20170524.032721-27-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/adk/common/1.2.22-SNAPSHOT/common-1.2.22-20170524.032721-27-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

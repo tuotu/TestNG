@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.core.trade:trade-facade:2.6.7.20180110">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/trade/trade-facade/2.6.7.20180110/trade-facade-2.6.7.20180110.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/trade/trade-facade/2.6.7.20180110/trade-facade-2.6.7.20180110-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/core/trade/trade-facade/2.6.7.20180110/trade-facade-2.6.7.20180110-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

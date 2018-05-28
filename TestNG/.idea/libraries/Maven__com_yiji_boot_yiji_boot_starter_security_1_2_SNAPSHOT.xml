@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.boot:yiji-boot-starter-security:1.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boot/yiji-boot-starter-security/1.2-SNAPSHOT/yiji-boot-starter-security-1.2-20180413.090232-268.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boot/yiji-boot-starter-security/1.2-SNAPSHOT/yiji-boot-starter-security-1.2-20180413.090232-268-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/boot/yiji-boot-starter-security/1.2-SNAPSHOT/yiji-boot-starter-security-1.2-20180413.090232-268-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

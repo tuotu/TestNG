@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.pb:pb-facade:1.0.1.20171009">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/pb/pb-facade/1.0.1.20171009/pb-facade-1.0.1.20171009.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/pb/pb-facade/1.0.1.20171009/pb-facade-1.0.1.20171009-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/pb/pb-facade/1.0.1.20171009/pb-facade-1.0.1.20171009-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

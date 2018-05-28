@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yiji.commonservices:commonservices-facade:3.7.0.20180131">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonservices/commonservices-facade/3.7.0.20180131/commonservices-facade-3.7.0.20180131.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonservices/commonservices-facade/3.7.0.20180131/commonservices-facade-3.7.0.20180131-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yiji/commonservices/commonservices-facade/3.7.0.20180131/commonservices-facade-3.7.0.20180131-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

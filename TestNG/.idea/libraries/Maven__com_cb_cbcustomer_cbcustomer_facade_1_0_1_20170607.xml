@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.cb.cbcustomer:cbcustomer-facade:1.0.1.20170607">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cb/cbcustomer/cbcustomer-facade/1.0.1.20170607/cbcustomer-facade-1.0.1.20170607.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cb/cbcustomer/cbcustomer-facade/1.0.1.20170607/cbcustomer-facade-1.0.1.20170607-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cb/cbcustomer/cbcustomer-facade/1.0.1.20170607/cbcustomer-facade-1.0.1.20170607-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

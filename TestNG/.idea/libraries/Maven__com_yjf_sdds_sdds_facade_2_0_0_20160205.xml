@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yjf.sdds:sdds-facade:2.0.0.20160205">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/sdds/sdds-facade/2.0.0.20160205/sdds-facade-2.0.0.20160205.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/sdds/sdds-facade/2.0.0.20160205/sdds-facade-2.0.0.20160205-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yjf/sdds/sdds-facade/2.0.0.20160205/sdds-facade-2.0.0.20160205-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
